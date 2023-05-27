@@ -1,1 +1,2 @@
 # Skinn
+Макет "Skinn"
