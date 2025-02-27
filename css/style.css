@@ -1,4 +1,5 @@
 @import url("./basic.css");
+
 .btn {
   border: 1px solid #dacec6;
   background-color: var(--bg-button);
@@ -30,6 +31,7 @@
   font-size: 0.92em;
 }
 .main-wrapper {
+  position: relative;
   padding-top: 150px;
   padding-bottom: 290px;
   max-width: calc(var(--container-width) / 2 + var(--basic-space));
@@ -79,7 +81,7 @@
 .second-title-br {
   font-size: 0.92em;
 }
-.discription {
+.description {
   margin-top: 18px;
 }
 .btn-pd {
@@ -129,9 +131,19 @@
   font-size: 65px;
   margin-bottom: 50px;
 }
+.wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .product-card {
   background: #e7ded8;
   border-radius: 10px;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  max-width: 360px;
+  margin: 0 auto;
 }
 .card-wrapper {
   padding: 10px;
@@ -144,7 +156,7 @@
   margin-top: 41px;
   display: inline-block;
 }
-.card-discription {
+.card-description {
   margin-top: 6px;
   font-size: 19px;
 }
@@ -161,32 +173,36 @@
 .feature-title {
   text-align: center;
   margin-top: 90px;
-  max-width: 460px;
-  margin-right: 80px;
 }
 .img-feature {
   margin-top: 123px;
   border-radius: 10px;
 }
-.feature-discription {
+.feature-description {
   margin-top: 25px;
   margin-bottom: 39px;
   font-size: 17px;
 }
 .btn-2 {
-  padding: 12px 21px;
+  padding: 13px 21px;
+  max-width: 144px;
+  display: flex;
+  align-items: center;
+}
+.some {
+  margin: 106px 0 80px;
 }
 .some-text {
-  max-width: 832px;
-  padding-top: 206px;
+  width: 1200px;
   margin: auto;
 }
 .text-style {
   font-size: 28px;
   text-align: center;
+  padding: 40px 0;
 }
 .logotips {
-  max-width: 662px;
+  max-width: 700px;
   margin: auto;
   padding-top: 66px;
   margin-bottom: 209px;
@@ -206,7 +222,6 @@
   width: 33.3%;
   background-size: cover;
 }
-
 .card-3 {
   background-image: url("../images/IMAGE-14.png");
   background-repeat: no-repeat;
@@ -232,7 +247,7 @@
   text-align: center;
   margin-bottom: 51px;
 }
-.blog-discription {
+.blog-description {
   font-family: "STSong";
   font-style: normal;
   font-weight: 300;
@@ -249,7 +264,7 @@
 .blog-btn {
   border-radius: 166px;
   padding: 13px 21px;
-  margin-bottom: 0;
+  margin: 15px 0;
 }
 .blog-content {
   flex-direction: column;
@@ -317,4 +332,110 @@ footer {
 .display-block {
   margin-top: 39px;
   display: block;
+}
+.flex-col {
+  flex-direction: row;
+}
+.flex-col-w {
+  flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+  .wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main-wrapper {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .main-title {
+    font-size: 58px;
+  }
+  .you {
+    font-size: 95px;
+  }
+  .text-center {
+    width: 500px;
+    padding-top: 125px;
+    padding-bottom: 140px;
+  }
+  .script-rotate {
+    font-size: 87px;
+  }
+  .script-title {
+    font-size: 87px;
+  }
+  .title {
+    font-size: 87px;
+  }
+  .second-title {
+    max-width: 700px;
+  }
+  .second-title-br {
+    max-width: 700px;
+  }
+  .description {
+    margin-top: 18px;
+  }
+  .some-text {
+    width: 700px;
+  }
+  .btn-pd {
+    border-radius: 73px;
+    margin-top: 18px;
+    padding: 13px 21px;
+  }
+  .img-1,
+  .img-2,
+  .img-2,
+  .img-3,
+  .img-4,
+  .img-5 {
+    display: none;
+  }
+  .text-style {
+    font-size: 17px;
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrap {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .you {
+    font-size: 55px;
+  }
+  .main-title-br {
+    font-size: 0.92em;
+  }
+  .main-wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .text-center {
+    width: 380px;
+    padding-top: 55px;
+    padding-bottom: 60px;
+  }
+  .script-rotate {
+    font-size: 37px;
+  }
+  .second-title {
+    font-size: 45px;
+  }
+  .second-title-br {
+    font-size: 0.92em;
+  }
+  .description {
+    margin-top: 18px;
+  }
+  .btn-pd {
+    border-radius: 73px;
+    margin-top: 18px;
+    padding: 13px 21px;
+  }
+  .flex-col {
+    flex-direction: column;
+  }
 }
